@@ -1,0 +1,29 @@
+﻿<UserControl x:Class="PairTradingView.WpfApp.DataGridControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="800">
+    <Grid>
+        <DataGrid CanUserSortColumns="True" GridLinesVisibility="None" AutoGenerateColumns="False" Grid.Row="1" Grid.ColumnSpan="2" x:Name="dataGrid">
+            <DataGrid.Columns>
+                <DataGridCheckBoxColumn Binding="{Binding Selected}"/>
+                <DataGridTextColumn Header="X" Binding="{Binding X.Name}" IsReadOnly="True"/>
+                <DataGridTextColumn Header="Y" Binding="{Binding Y.Name}" IsReadOnly="True"/>
+                <DataGridTextColumn Header="SD_X" Binding="{Binding SD_X, StringFormat=F4}" IsReadOnly="True"/>
+                <DataGridTextColumn Header="SD_Y" Binding="{Binding SD_Y, StringFormat=F4}" IsReadOnly="True"/>
+                <DataGridTextColumn Header="Alpha" Binding="{Binding Regression.Alpha, StringFormat=F4}" IsReadOnly="True"/>
+                <DataGridTextColumn Header="Beta" Binding="{Binding Regression.Beta, StringFormat=F4}" IsReadOnly="True"/>
+                <DataGridTextColumn Header="R" Binding="{Binding Regression.RValue, StringFormat=F4}" IsReadOnly="True"/>
+                <DataGridTextColumn Header="RSquared" Binding="{Binding Regression.RSquared, StringFormat=F4}" IsReadOnly="True"/>
+                <DataGridTextColumn Header="DeltaAverage" Binding="{Binding DeltaAverage, StringFormat=F4}" IsReadOnly="True"/>
+                <DataGridTextColumn Header="DeltaMin" Binding="{Binding DeltaMin, StringFormat=F4}" IsReadOnly="True"/>
+                <DataGridTextColumn Header="DeltaMax" Binding="{Binding DeltaMax, StringFormat=F4}" IsReadOnly="True"/>
+                <DataGridTextColumn Header="DeltaSD" Binding="{Binding DeltaSD, StringFormat=F4}" IsReadOnly="True"/>
+                <DataGridTextColumn Header="DeltaSDMinus3Q" Binding="{Binding DeltaSDMinus3Q, StringFormat=F4}" IsReadOnly="True"/>
+                <DataGridTextColumn Header="DeltaSDPlus3Q" Binding="{Binding DeltaSDPlus3Q, StringFormat=F4}" IsReadOnly="True"/>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</UserControl>
