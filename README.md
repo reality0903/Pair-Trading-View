@@ -6,7 +6,7 @@
 **[ PairTradingView.WinFormsApp ]**
 
 <p align="left">
-  <img width="700" alt="pic" src="https://github.com/reality0903/PairTradingView/blob/master/screenshots/mainwindow.png">
+  <img width="700" alt="pic" src="https://github.com/reality0903/Pair-Trading-View/blob/master/screenshots/mainwindow.png">
 </p>
 
 
@@ -15,7 +15,7 @@
 Execute PairTradingView.exe in 'pair-trading-view\PairTradingView.WinFormsApp\bin\Debug\'.
 
 <p align="left">
-  <img width="270" alt="pic" src="https://github.com/reality0903/PairTradingView/blob/master/screenshots/appstart.png">
+  <img width="270" alt="pic" src="https://github.com/reality0903/Pair-Trading-View/blob/master/screenshots/appstart.png">
 </p>
 
 Set 'Price' column. Put csv files with a historical data into
